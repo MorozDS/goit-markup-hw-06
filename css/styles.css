@@ -663,6 +663,42 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 9px;
 }
 
+.footer-subscribe {
+  margin-left: 93px;
+
+}
+.input-subscribe{
+  width: 358px;
+  height: 50px;
+  padding: 16px 15px;
+  background: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+
+.subscribe-header{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.subscribe-btn{
+  height: 50px;
+  width: 200px;
+  margin: 0;
+  background-color: var(--action-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 1px solid var(--action-color);
+}
 
  /* ----------------------------------------------------------------------------------------------------------------------------Портфолио */
 .portfolio-title {
