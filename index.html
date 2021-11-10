@@ -368,15 +368,18 @@
         </div>
 
        
-             
+            
             <div class="footer-subscribe" >
                 <p class="subscribe-header">Подпишитесь на рассылку</p>
                 <form action="">
+                    <div class="subscribe-wrap">
+                       
+                </div>
                     <label class="subscribe-label" for="subscribe"></label>
-                    <input class="input-subscribe" type="email" id="subscribe" name="subscribe mail">
-                    </label>
+                    <input class="input-subscribe" type="email" id="subscribe" name="subscribe mail" placeholder="E-mail" >
+                   
                     
-                    <button class="subscribe-btn" type="submit">Подписаться</button>
+                    <button class="subscribe-btn" type="submit">Подписаться <svg width='24' height='24' > <use href="./images/icons.svg#icon-iconbtn"></use> </svg></button>
                 </form>
 
             </div>
@@ -422,9 +425,12 @@
             <label class="modal-form-coment" for="coment">Коментарий</label>
             <textarea name="coment" class="textarea-coment" id="coment" placeholder="Введите текст"></textarea>
 
-            <input type="checkbox" class="input-form-checkbox" id="accept-policy">
-            <label for="accept-policy" class="form-checkbox" " >Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a> </label>
-
+            <span class="checkbox-span">
+            <input type="checkbox" id="accept-policy" class="input-form-checkbox visually-hidden  ">
+            <label for="accept-policy" class="form-checkbox " >Соглашаюсь с рассылкой и принимаю&nbsp; <a class="check-police" href="#"> Условия договора</a> 
+            </label>
+</span>
+    
             <button type="submit" class="modal-form-btn" > Отправить </button>
 
         </form>

@@ -665,8 +665,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .footer-subscribe {
   margin-left: 93px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 
 }
+
+.subscribe-wrap{
+  display: flex;
+ 
+  
+}
+
 .input-subscribe{
   width: 358px;
   height: 50px;
@@ -698,6 +708,21 @@ margin-bottom: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: 1px solid var(--action-color);
+font-family: Roboto;
+font-style: normal;
+font-weight:700;
+font-size: 16px;
+line-height: 1.8;
+/* identical to box height, or 187% */
+
+ /* display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;  */
+
+
+color: #FFFFFF;
+
 }
 
  /* ----------------------------------------------------------------------------------------------------------------------------Портфолио */
@@ -1009,10 +1034,11 @@ color: rgba(117, 117, 117, 0.5);
 
  }
 
+ 
  .modal-form-btn{
-   align-self: center;
-   padding: 10px 55px;
-   font-family: Roboto;
+align-self: center;
+padding: 10px 55px;
+font-family: Roboto;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -1025,6 +1051,61 @@ background-color: var(--action-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: none;
+margin-top: 30px;
 
  }
+
+ .form-checkbox::before {
+   display: block;
+   content:"";
+   height: 15px;
+   width: 15px;
+   border: 2px solid #212121;
+   border-radius: 2px;
+   cursor: pointer;
+   margin-right: 7px;
+   
+ } 
+
+ .input-form-checkbox:checked + .form-checkbox::before {
+   background-color: var(--action-color);
+   background-image: url(../images/check1.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   background-origin: border-box;
+   border-color: var(--action-color);
+ }
  
+
+.check-police {
+  text-decoration: underline;
+}
+
+ .checkbox-span {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+/* .subscribe-btn::after {
+  content: " ";
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/iconbtn.svg); */
